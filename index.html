@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eyad Neanaa | Marketing Automation &amp; n8n Specialist</title>
+<meta name="description" content="Marketing automation and n8n workflow specialist. I build AI-powered automations, lead-intake bots, and bilingual web systems that save businesses dozens of hours.">
+<meta name="author" content="Eyad Neanaa">
+<meta name="theme-color" content="#090c10">
+<meta name="color-scheme" content="dark">
+
+<!-- Open Graph & Social Cards -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Eyad Neanaa">
+<meta property="og:title" content="Eyad Neanaa | Marketing Automation &amp; n8n Specialist">
+<meta property="og:description" content="Eliminate repetitive operations with tailored n8n workflows, AI bots, and custom web systems.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_EG">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090c10'/%3E%3Cpath d='M22 20h22M22 32h15M22 44h22M22 20v24' stroke='%23a855f7' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Eyad Neanaa",
+  "jobTitle": "Marketing Automation & n8n Specialist",
+  "knowsAbout": ["n8n", "Marketing Automation", "AI Workflows", "Supabase", "API Integration", "Web Development"],
+  "sameAs": ["https://linkedin.com/in/eyad-neanaa"]
+}
+</script>
+
+<script>
+(function () {
+  var d = document.documentElement, l = null;
+  d.classList.add('js');
+  try { l = localStorage.getItem('lang'); } catch (e) {}
+  var q = /[?&]lang=(en|ar)\b/.exec(location.search);
+  if (q) l = q[1];
+  if (l !== 'en' && l !== 'ar') l = (navigator.language || '').toLowerCase().indexOf('ar') === 0 ? 'ar' : 'en';
+  d.lang = l;
+  d.dir = l === 'ar' ? 'rtl' : 'ltr';
+})();
+</script>
+
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #090c10;
+  --panel: #11161f;
+  --panel-2: #161d28;
+  --panel-hover: #1c2432;
+  --line: #222b38;
+  --line-strong: #3d4a5e;
+  --text: #f0f4f8;
+  --muted: #94a3b8;
+  --accent: #a855f7;
+  --accent-light: #c084fc;
+  --accent-glow: rgba(168, 85, 247, 0.25);
+  --accent-pink: #ec4899;
+  --accent-blue: #3b82f6;
+  --ok: #22c55e;
+  --sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --serif-ar: 'Amiri', 'Traditional Arabic', serif;
+  --mono: 'Space Grotesk', ui-monospace, monospace;
+  --max: 1080px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 1rem/1.65 var(--sans); -webkit-font-smoothing: antialiased;
+}
+html[lang="ar"] body { font-family: var(--serif-ar); font-size: 1.22rem; line-height: 1.95; }
+html[dir="rtl"] * { letter-spacing: 0 !important; }
+
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3, h4, p, ul { margin: 0; }
+ul { padding: 0; list-style: none; }
+
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+.container { width: min(100% - 2.5rem, var(--max)); margin-inline: auto; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; inset-inline-start: 1rem; top: -4rem; z-index: 100; background: var(--accent); color: #fff; padding: .65rem 1rem; border-radius: 8px; font-weight: 700; text-decoration: none; }
+.skip:focus { top: 1rem; }
+
+.ico { width: 1.15em; height: 1.15em; flex: none; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+html[dir="rtl"] .flip { transform: scaleX(-1); }
+
+/* Header */
+.site-header { position: sticky; top: 0; z-index: 50; background: rgba(9, 12, 16, 0.88); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
+.bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; column-gap: 1.5rem; padding-block: .9rem; }
+.brand { display: flex; align-items: center; gap: .6rem; font-weight: 800; text-decoration: none; font-size: 1.15rem; letter-spacing: -.02em; }
+.brand-badge { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), var(--accent-pink)); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 800; color: #fff; }
+.nav ul { display: flex; gap: 1.75rem; }
+.nav a { display: inline-block; padding: .3rem 0; color: var(--muted); text-decoration: none; font-size: .95rem; font-weight: 500; transition: color .2s; }
+.nav a:hover { color: #fff; }
+
+.header-actions { display: flex; align-items: center; gap: .8rem; }
+.lang-btn { font: inherit; font-size: .9rem; font-weight: 600; color: var(--text); background: var(--panel); border: 1px solid var(--line-strong); border-radius: 999px; min-height: 38px; padding: .25rem 1rem; cursor: pointer; transition: all .2s; }
+.lang-btn:hover { border-color: var(--accent); color: var(--accent-light); box-shadow: 0 0 12px var(--accent-glow); }
+
+@media (max-width: 760px) {
+  .nav { order: 3; flex-basis: 100%; overflow-x: auto; padding-top: .6rem; }
+  .nav ul { gap: 1.25rem; width: max-content; }
+}
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 48px; padding: .75rem 1.5rem; border: 1px solid transparent; border-radius: 10px; font: inherit; font-weight: 600; text-decoration: none; cursor: pointer; transition: all .25s ease; }
+.btn-primary { background: linear-gradient(135deg, var(--accent), #7c3aed); color: #fff; box-shadow: 0 4px 20px var(--accent-glow); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(168, 85, 247, 0.45); }
+.btn-secondary { background: var(--panel-2); border-color: var(--line-strong); color: var(--text); }
+.btn-secondary:hover { border-color: var(--accent); color: #fff; transform: translateY(-2px); }
+.btn-sm { min-height: 38px; padding: .45rem 1rem; font-size: .9rem; border-radius: 8px; }
+
+/* Sections */
+section[id] { scroll-margin-top: 5.5rem; }
+.section { padding-block: clamp(4rem, 9vw, 6.5rem); }
+.section + .section { border-top: 1px solid var(--line); }
+
+h2 { font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.18; font-weight: 800; letter-spacing: -.03em; margin-bottom: .8rem; }
+.section-subtitle { color: var(--muted); font-size: 1.1rem; max-width: 38em; margin-bottom: 2.75rem; }
+
+/* Hero */
+.hero { position: relative; padding-block: clamp(4.5rem, 11vw, 8rem); overflow: hidden; background: radial-gradient(60% 60% at 80% 10%, rgba(168, 85, 247, 0.14), transparent 75%), radial-gradient(40% 40% at 20% 90%, rgba(59, 130, 246, 0.08), transparent 70%); }
+.hero-grid { display: grid; gap: 3.5rem; align-items: center; }
+@media (min-width: 940px) { .hero-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, .85fr); gap: 4.5rem; } }
+
+.badge-row { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; margin-bottom: 1.5rem; }
+.status-pill { display: inline-flex; align-items: center; gap: .6rem; border: 1px solid rgba(34, 197, 94, 0.3); background: rgba(34, 197, 94, 0.08); border-radius: 999px; padding: .35rem 1rem; font-size: .88rem; font-weight: 600; color: #86efac; }
+.dot { width: .55rem; height: .55rem; border-radius: 50%; background: var(--ok); }
+@media (prefers-reduced-motion: no-preference) {
+  .dot { animation: ring 2.2s ease-out infinite; }
+  @keyframes ring { 0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, .6); } 70%, 100% { box-shadow: 0 0 0 .55rem rgba(74, 222, 128, 0); } }
+}
+
+h1 { font-size: clamp(2.7rem, 6.8vw, 4.4rem); line-height: 1.06; letter-spacing: -.035em; font-weight: 850; }
+.gradient-text { background: linear-gradient(135deg, #fff 40%, var(--accent-light) 90%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.hero-title { display: grid; margin-top: 1.1rem; font-family: var(--mono); font-size: clamp(1rem, 2.2vw, 1.25rem); color: var(--accent-light); font-weight: 600; }
+html[lang="ar"] .hero-title { font-family: var(--serif-ar); }
+.hero-title > * { grid-area: 1 / 1; }
+html.js .hero-title .ghost { visibility: hidden; }
+html.js .typed::after { content: ""; display: inline-block; inline-size: .5em; block-size: 1.1em; margin-inline-start: .2em; vertical-align: -.15em; background: var(--accent); }
+.typed.done::after { opacity: 0; }
+
+.tagline { margin-top: 1.35rem; max-width: 36em; font-size: 1.15rem; color: var(--muted); line-height: 1.7; }
+.actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.25rem; }
+
+.trust-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1.25rem; margin-top: 2.75rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.metric-num { font-size: 1.6rem; font-weight: 800; color: #fff; font-family: var(--mono); }
+.metric-label { font-size: .84rem; color: var(--muted); margin-top: .15rem; }
+
+/* Interactive Workflow Simulation Visual */
+.flow-card { position: relative; background: var(--panel); border: 1px solid var(--line-strong); border-radius: 20px; padding: 1.75rem; box-shadow: 0 20px 40px -15px rgba(0,0,0,.6); }
+.flow-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+.flow-title { font-size: .88rem; font-family: var(--mono); color: var(--muted); display: flex; align-items: center; gap: .5rem; }
+.live-badge { background: rgba(168, 85, 247, 0.15); color: var(--accent-light); border: 1px solid var(--accent); font-size: .75rem; padding: .15rem .55rem; border-radius: 999px; font-weight: 700; text-transform: uppercase; }
+
+.node { display: flex; align-items: center; justify-content: space-between; gap: 1rem; background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: .9rem 1.15rem; font-weight: 650; font-size: .95rem; transition: transform .2s, border-color .2s; }
+.node:hover { border-color: var(--line-strong); }
+.node-left { display: flex; align-items: center; gap: .75rem; }
+.node-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); }
+.node.is-ai { border-color: var(--accent); background: linear-gradient(135deg, rgba(168, 85, 247, 0.12), var(--panel-2)); }
+.node.is-ai .node-icon { background: var(--accent); color: #fff; }
+.node-badge { font-size: .75rem; color: var(--muted); font-family: var(--mono); }
+
+.connector { position: relative; width: 3px; height: 2.2rem; background: var(--line-strong); margin-inline-start: 1.7rem; overflow: hidden; border-radius: 3px; }
+.connector::after { content: ''; position: absolute; inset-inline: 0; top: -100%; height: 100%; background: linear-gradient(to bottom, transparent, var(--accent-light), transparent); animation: pulseData 2.4s infinite cubic-bezier(0.4, 0, 0.2, 1); }
+.connector.delay::after { animation-delay: 1.2s; }
+@keyframes pulseData {
+  0% { top: -100%; }
+  100% { top: 100%; }
+}
+
+/* About & Services */
+.about-box { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: clamp(2rem, 4vw, 3rem); }
+.about-text { font-size: 1.18rem; color: #cbd5e1; max-width: 48em; line-height: 1.8; }
+.tags { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 2rem; }
+.tag { font-size: .88rem; font-weight: 500; color: var(--muted); background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: .35rem .85rem; transition: all .2s; }
+.tag:hover { border-color: var(--accent); color: #fff; }
+
+.grid-3 { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.grid-2 { display: grid; gap: 1.75rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); }
+
+.card { display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 2rem; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; position: relative; overflow: hidden; }
+.card:hover { transform: translateY(-3px); border-color: var(--line-strong); box-shadow: 0 12px 30px -10px rgba(0,0,0,0.5); }
+.card-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--panel-2); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--accent-light); margin-bottom: 1.25rem; }
+.card h3 { font-size: 1.35rem; line-height: 1.3; font-weight: 700; margin-bottom: .6rem; }
+.card p { color: var(--muted); font-size: 1rem; line-height: 1.65; }
+
+/* Enhanced Project Cards */
+.project-card { display: flex; flex-direction: column; }
+.project-card:hover { border-color: rgba(168, 85, 247, 0.4); box-shadow: 0 16px 36px -12px var(--accent-glow); }
+.project-meta { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: .85rem; }
+.category-badge { font-size: .78rem; font-weight: 700; text-transform: uppercase; font-family: var(--mono); color: var(--accent-light); background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: 999px; padding: .2rem .75rem; }
+
+.project-specs { display: grid; gap: .75rem; margin-block: 1.25rem; background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.25rem; }
+.spec-row { display: flex; flex-direction: column; gap: .15rem; font-size: .92rem; }
+.spec-title { font-weight: 700; color: #e2e8f0; font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
+.spec-desc { color: var(--muted); }
+.spec-row.impact .spec-desc { color: #86efac; font-weight: 600; }
+
+.project-card .tags { margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--line); }
+.project-card .ext { display: inline-flex; align-items: center; gap: .45rem; color: var(--accent-light); font-weight: 600; text-decoration: none; padding-top: .75rem; }
+.project-card .ext:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* Interactive ROI Calculator */
+.calc-card { background: linear-gradient(145deg, var(--panel), #141b24); border: 1px solid var(--line-strong); border-radius: 20px; padding: clamp(1.75rem, 4vw, 2.75rem); display: grid; gap: 2.5rem; }
+@media (min-width: 860px) { .calc-card { grid-template-columns: 1.2fr 1fr; align-items: center; } }
+.slider-group { display: flex; flex-direction: column; gap: .5rem; margin-top: 1.5rem; }
+.slider-label { display: flex; justify-content: space-between; font-weight: 600; font-size: .95rem; }
+.slider-value { color: var(--accent-light); font-family: var(--mono); font-weight: 700; }
+input[type="range"] { -webkit-appearance: none; width: 100%; height: 8px; border-radius: 4px; background: var(--panel-2); outline: none; border: 1px solid var(--line); }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); cursor: pointer; border: 2px solid #fff; box-shadow: 0 0 10px var(--accent-glow); }
+
+.calc-result-box { background: var(--panel-2); border: 1px solid var(--accent); border-radius: 16px; padding: 2rem; text-align: center; box-shadow: 0 10px 30px -10px var(--accent-glow); }
+.calc-result-title { font-size: .9rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: .5rem; }
+.calc-savings { font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 800; font-family: var(--mono); color: #fff; line-height: 1.1; }
+.calc-hours { color: var(--ok); font-size: 1.1rem; font-weight: 700; margin-top: .5rem; }
+.calc-note { font-size: .85rem; color: var(--muted); margin-top: 1rem; }
+
+/* Experience Timeline */
+.timeline { border-inline-start: 2px solid var(--line); padding-inline-start: 2rem; display: grid; gap: 2.5rem; }
+.timeline li { position: relative; }
+.timeline li::before { content: ""; position: absolute; inset-inline-start: calc(-2rem - 7px); top: .35rem; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); box-shadow: 0 0 10px var(--accent); }
+.timeline h3 { font-size: 1.25rem; font-weight: 700; }
+.timeline .org { color: var(--accent-light); font-weight: 600; margin-top: .2rem; }
+.timeline .date { color: var(--muted); font-size: .92rem; margin-top: .15rem; font-family: var(--mono); }
+.timeline .desc { color: #cbd5e1; font-size: .95rem; margin-top: .5rem; }
+
+/* Contact */
+.contact-grid { display: grid; gap: 3rem; }
+@media (min-width: 860px) { .contact-grid { grid-template-columns: 1.1fr 0.9fr; } }
+.contact-methods { display: grid; gap: 1rem; margin-top: 2rem; }
+.contact-item { display: flex; align-items: center; gap: 1.25rem; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 1.25rem 1.5rem; text-decoration: none; transition: all .2s; }
+.contact-item:hover { border-color: var(--accent); transform: translateX(4px); }
+html[dir="rtl"] .contact-item:hover { transform: translateX(-4px); }
+.contact-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--panel-2); display: flex; align-items: center; justify-content: center; color: var(--accent-light); flex: none; }
+.contact-item-title { font-weight: 700; font-size: 1.05rem; }
+.contact-item-sub { color: var(--muted); font-size: .9rem; margin-top: .15rem; }
+
+.contact-box { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 2rem; }
+.contact-box h3 { font-size: 1.35rem; margin-bottom: .8rem; }
+.contact-box p { color: var(--muted); font-size: .95rem; margin-bottom: 1.5rem; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--line); padding-block: 2.25rem; background: var(--bg); }
+.foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem; }
+.foot p { color: var(--muted); font-size: .95rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html.js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
+  html.js .reveal.in { opacity: 1; transform: none; }
+}
+</style>
+</head>
+
+<body id="top">
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="#top">
+      <div class="brand-badge">E</div>
+      <span>Eyad Neanaa</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#calculator" data-i18n="nav.calculator">ROI Calculator</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-btn" type="button" data-lang-toggle lang="ar">العربية</button>
+      <a class="btn btn-primary btn-sm" href="#contact" data-i18n="nav.book">Let's Talk</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero Section -->
+  <section class="hero" aria-labelledby="hero-name">
+    <div class="container hero-grid reveal">
+      <div>
+        <div class="badge-row">
+          <div class="status-pill"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.tag">Available for Freelance &amp; Workflows</span></div>
+        </div>
+        <h1 id="hero-name"><span class="gradient-text">Eyad Neanaa</span></h1>
+        <p class="hero-title"><span class="ghost">Marketing Automation &amp; n8n Specialist</span><span class="typed" id="typed" aria-hidden="true"></span></p>
+        <p class="tagline" data-i18n="hero.tagline">I engineer autonomous n8n workflows, AI qualification bots, and bilingual web systems that eradicate repetitive manual tasks and accelerate client growth.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects" data-i18n="hero.cta1">Explore Workflows</a>
+          <a class="btn btn-secondary" href="#calculator" data-i18n="hero.cta2">Calculate Your Savings</a>
+        </div>
+        
+        <div class="trust-metrics">
+          <div>
+            <div class="metric-num">10+</div>
+            <div class="metric-label" data-i18n="metric.workflows">Automated Workflows</div>
+          </div>
+          <div>
+            <div class="metric-num">&lt; 1 min</div>
+            <div class="metric-label" data-i18n="metric.response">Lead Response Time</div>
+          </div>
+          <div>
+            <div class="metric-num">EN / AR</div>
+            <div class="metric-label" data-i18n="metric.bilingual">Bilingual Native Systems</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Simulated Flow Visual -->
+      <div class="flow-card" aria-hidden="true">
+        <div class="flow-header">
+          <div class="flow-title">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <span>ACTIVE WORKFLOW PIPELINE</span>
+          </div>
+          <span class="live-badge">Running</span>
+        </div>
+
+        <div class="node">
+          <div class="node-left">
+            <div class="node-icon"><svg class="ico" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></div>
+            <span>Telegram / Webhook</span>
+          </div>
+          <span class="node-badge">Incoming Lead</span>
+        </div>
+
+        <div class="connector"></div>
+
+        <div class="node is-ai">
+          <div class="node-left">
+            <div class="node-icon"><svg class="ico" viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 3 2 5.5 5 7.2V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.8c3-1.7 5-4.2 5-7.2a8 8 0 0 0-8-8Z"/></svg></div>
+            <span>Groq / Gemini AI</span>
+          </div>
+          <span class="node-badge" style="color:var(--accent-light);">Extract 9 Fields</span>
+        </div>
+
+        <div class="connector delay"></div>
+
+        <div class="node">
+          <div class="node-left">
+            <div class="node-icon"><svg class="ico" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <span>Google Sheets &amp; Calendar</span>
+          </div>
+          <span class="node-badge">Auto-Booked</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about" aria-labelledby="about-h">
+    <div class="container reveal">
+      <div class="about-box">
+        <h2 id="about-h" data-i18n="about.h">About Me</h2>
+        <p class="about-text" data-i18n="about.p">I am an automation engineer specializing in building AI-powered operational workflows, data pipelines, and custom web applications. I turn chaotic manual tasks into reliable, hands-off automation so business owners can focus purely on growth.</p>
+        <ul class="tags">
+          <li class="tag">n8n Workflow Architecture</li>
+          <li class="tag">AI Agent Orchestration</li>
+          <li class="tag">API &amp; Webhook Integration</li>
+          <li class="tag">Supabase &amp; Vector Databases</li>
+          <li class="tag">Lead Scoring &amp; Qualification</li>
+          <li class="tag">Google Workspace Automation</li>
+          <li class="tag">Bilingual Arabic/English Web Apps</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services" aria-labelledby="services-h">
+    <div class="container reveal">
+      <h2 id="services-h" data-i18n="services.h">What I Build</h2>
+      <p class="section-subtitle" data-i18n="services.sub">Tailored automations designed to solve real operational bottlenecks and save team hours.</p>
+      <div class="grid-3">
+        <article class="card">
+          <div class="card-icon"><svg class="ico" viewBox="0 0 24 24"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg></div>
+          <h3 data-i18n="s1.t">n8n Workflow Engineering</h3>
+          <p data-i18n="s1.d">Designing self-healing automations that unify CRMs, communication channels, and spreadsheets with custom logic and zero downtime.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
+          <h3 data-i18n="s2.t">Conversational AI &amp; Bots</h3>
+          <p data-i18n="s2.d">Smart Telegram and WhatsApp agents that qualify leads, extract structured requirements, and auto-book appointments in seconds.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon"><svg class="ico flip" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
+          <h3 data-i18n="s3.t">Bilingual Web Solutions</h3>
+          <p data-i18n="s3.d">Modern, high-converting Arabic/English websites and client portals equipped with automated backend spreadsheets and CMS sync.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Case Studies) -->
+  <section class="section" id="projects" aria-labelledby="projects-h">
+    <div class="container reveal">
+      <h2 id="projects-h" data-i18n="projects.h">Featured Projects &amp; Case Studies</h2>
+      <p class="section-subtitle" data-i18n="projects.sub">Real solutions built for client operations, productivity, and document retrieval.</p>
+      <div class="grid-2">
+
+        <article class="card project-card">
+          <div class="project-meta">
+            <span class="category-badge">Lead Gen Automation</span>
+          </div>
+          <h3 data-i18n="p3.t">Real Estate Lead Qualification Bot</h3>
+          <div class="project-specs">
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="p.problem">The Problem:</span>
+              <span class="spec-desc" data-i18n="p3.prob">Slow manual replies caused real estate inquiries to go cold before agents could gather budget and location requirements.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="p.solution">The Solution:</span>
+              <span class="spec-desc" data-i18n="p3.sol">Autonomous bot that holds conversational qualification, extracts 9 data attributes with AI, logs to Sheets, and books follow-ups automatically.</span>
+            </div>
+            <div class="spec-row impact">
+              <span class="spec-title" data-i18n="p.impact">Impact:</span>
+              <span class="spec-desc" data-i18n="p3.imp">Sub-minute response rate 24/7 with zero human intervention required.</span>
+            </div>
+          </div>
+          <ul class="tags"><li class="tag">n8n</li><li class="tag">Groq AI</li><li class="tag">Google Sheets</li><li class="tag">Google Calendar</li></ul>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-meta">
+            <span class="category-badge">AI Knowledge Retrieval</span>
+          </div>
+          <h3 data-i18n="p2.t">RAG Document Vector Pipeline</h3>
+          <div class="project-specs">
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="p.problem">The Problem:</span>
+              <span class="spec-desc" data-i18n="p2.prob">Teams waste hours searching across extensive business PDF catalogs and technical reports for specific answers.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="p.solution">The Solution:</span>
+              <span class="spec-desc" data-i18n="p2.sol">Vector search pipeline extracting text from Drive PDFs, generating embeddings via Gemini, and querying Supabase Vector Store with dimension alignment.</span>
+            </div>
+            <div class="spec-row impact">
+              <span class="spec-title" data-i18n="p.impact">Impact:</span>
+              <span class="spec-desc" data-i18n="p2.imp">Instant semantic retrieval across hundreds of documentation pages.</span>
+            </div>
+          </div>
+          <ul class="tags"><li class="tag">Supabase Vector</li><li class="tag">Google Drive</li><li class="tag">Gemini API</li><li class="tag">n8n</li></ul>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-meta">
+            <span class="category-badge">Productivity Bot</span>
+          </div>
+          <h3 data-i18n="p1.t">Natural Language Telegram Task Manager</h3>
+          <div class="project-specs">
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="p.problem">The Problem:</span>
+              <span class="spec-desc" data-i18n="p1.prob">Traditional task manager apps have high friction, resulting in forgotten to-dos and neglected trackers.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="p.solution">The Solution:</span>
+              <span class="spec-desc" data-i18n="p1.sol">Telegram bot allowing voice/text natural input that parses intent via LLM and updates structured Google Sheet task matrices directly.</span>
+            </div>
+            <div class="spec-row impact">
+              <span class="spec-title" data-i18n="p.impact">Impact:</span>
+              <span class="spec-desc" data-i18n="p1.imp">Frictionless task capture in under 3 seconds per entry.</span>
+            </div>
+          </div>
+          <ul class="tags"><li class="tag">Telegram API</li><li class="tag">Groq LLaMA 3</li><li class="tag">Google Sheets</li></ul>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-meta">
+            <span class="category-badge">Web &amp; CMS Sync</span>
+          </div>
+          <h3 data-i18n="p4.t">BP Blueprinter Studio Website</h3>
+          <div class="project-specs">
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="p.problem">The Problem:</span>
+              <span class="spec-desc" data-i18n="p4.prob">Studio needed a bilingual portfolio without an overcomplicated CMS requiring maintenance.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="p.solution">The Solution:</span>
+              <span class="spec-desc" data-i18n="p4.sol">Engineered a bilingual Arabic/English responsive web application where project data and galleries sync dynamically from Google Sheets.</span>
+            </div>
+            <div class="spec-row impact">
+              <span class="spec-title" data-i18n="p.impact">Impact:</span>
+              <span class="spec-desc" data-i18n="p4.imp">Fast loading speed with instant content updates via spreadsheets.</span>
+            </div>
+          </div>
+          <a class="ext" href="https://blueprinters.lovable.app" target="_blank" rel="noopener noreferrer"><span data-i18n="p4.link">View Live Website</span><svg class="ico flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          <ul class="tags"><li class="tag">Web Development</li><li class="tag">Google Sheets CMS</li><li class="tag">Bilingual RTL</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Time Savings Calculator Section -->
+  <section class="section" id="calculator" aria-labelledby="calc-h">
+    <div class="container reveal">
+      <h2 id="calc-h" data-i18n="calc.h">Time Recovery Estimator</h2>
+      <p class="section-subtitle" data-i18n="calc.sub">Estimate how many hours custom n8n workflows and AI systems can give back to your team each month.</p>
+      
+      <div class="calc-card">
+        <div>
+          <div class="slider-group">
+            <div class="slider-label">
+              <span data-i18n="calc.hrs_label">Hours spent on repetitive manual tasks:</span>
+              <span class="slider-value" id="hrs-val">15 hrs/week</span>
+            </div>
+            <input type="range" id="hrs-input" min="3" max="50" value="15" step="1">
+          </div>
+        </div>
+
+        <div class="calc-result-box">
+          <div class="calc-result-title" data-i18n="calc.est_save">Estimated Time Reclaimed</div>
+          <div class="calc-savings" id="calc-savings">~52 hrs / mo</div>
+          <div class="calc-hours" id="calc-hours">~624 hours freed per year</div>
+          <p class="calc-note" data-i18n="calc.note">Reinvest this time into high-leverage client growth and strategy.</p>
+          <a class="btn btn-primary" href="#contact" style="margin-top:1.25rem; width:100%;" data-i18n="calc.btn">Reclaim Your Time</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section class="section" id="experience" aria-labelledby="exp-h">
+    <div class="container reveal">
+      <h2 id="exp-h" data-i18n="exp.h">Experience &amp; Track Record</h2>
+      <p class="section-subtitle" data-i18n="exp.sub">Hands-on technical implementation across marketing and engineering environments.</p>
+      <ul class="timeline">
+        <li>
+          <h3 data-i18n="e1.role">Digital Marketing &amp; Automation Trainee</h3>
+          <p class="org">I Move Clinics</p>
+          <p class="date">06/2026 – 08/2026 | Alexandria</p>
+          <p class="desc" data-i18n="e1.d">Streamlined review pipelines, assisted clinic automation setups, and deployed AI content workflows.</p>
+        </li>
+        <li>
+          <h3 data-i18n="e2.role">Engineering Assistant</h3>
+          <p class="org">Blueprinter</p>
+          <p class="date">08/2025 – 10/2025 | Kafr el Sheikh</p>
+          <p class="desc" data-i18n="e2.d">Developed studio web systems, digital assets, and integrated cloud content synchronization.</p>
+        </li>
+        <li>
+          <h3 data-i18n="e3.role">Engineering Assistant</h3>
+          <p class="org">EMDAD Energy Solutions</p>
+          <p class="date">2025</p>
+          <p class="desc" data-i18n="e3.d">Contributed to technical web layout presentations and operational support documentation.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact" aria-labelledby="contact-h">
+    <div class="container reveal">
+      <div class="contact-grid">
+        <div>
+          <h2 id="contact-h" data-i18n="contact.h">Let's Automate Your Business</h2>
+          <p class="contact-text" data-i18n="contact.p">Tell me where your team spends too much manual time, and I will show you how to turn it into an automated, scalable pipeline.</p>
+          
+          <div class="contact-methods">
+            <a class="contact-item" href="mailto:eyadneainaa@gmail.com">
+              <div class="contact-icon"><svg class="ico" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+              <div>
+                <div class="contact-item-title" data-i18n="contact.email_title">Direct Email</div>
+                <div class="contact-item-sub">eyadneainaa@gmail.com</div>
+              </div>
+            </a>
+
+            <a class="contact-item" href="https://linkedin.com/in/eyad-neanaa" target="_blank" rel="noopener noreferrer">
+              <div class="contact-icon"><svg class="ico" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></div>
+              <div>
+                <div class="contact-item-title">LinkedIn Profile</div>
+                <div class="contact-item-sub">linkedin.com/in/eyad-neanaa</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <h3 data-i18n="contact.box_title">Direct Inquiry</h3>
+          <p data-i18n="contact.box_sub">Ready to discuss a project or custom workflow? Send a message directly.</p>
+          <a class="btn btn-primary" href="mailto:eyadneainaa@gmail.com?subject=Workflow%20Automation%20Inquiry" style="width:100%;" data-i18n="contact.btn_mail">Email Me Directly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container foot">
+    <p data-i18n="footer.rights">© 2026 Eyad Neanaa. All rights reserved.</p>
+    <button class="lang-btn" type="button" data-lang-toggle lang="ar">العربية</button>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var T = {
+    en: {
+      'skip': 'Skip to content',
+      'nav.about': 'About', 'nav.services': 'Services', 'nav.projects': 'Projects', 'nav.calculator': 'ROI Calculator', 'nav.experience': 'Experience', 'nav.contact': 'Contact', 'nav.book': "Let's Talk",
+      'hero.tag': 'Available for Freelance & Workflows',
+      'hero.title': 'Marketing Automation & n8n Specialist',
+      'hero.tagline': 'I engineer autonomous n8n workflows, AI qualification bots, and bilingual web systems that eradicate repetitive manual tasks and accelerate client growth.',
+      'hero.cta1': 'Explore Workflows', 'hero.cta2': 'Calculate Your Savings',
+      'metric.workflows': 'Automated Workflows', 'metric.response': 'Lead Response Time', 'metric.bilingual': 'Bilingual Native Systems',
+      'about.h': 'About Me',
+      'about.p': 'I am an automation engineer specializing in building AI-powered operational workflows, data pipelines, and custom web applications. I turn chaotic manual tasks into reliable, hands-off automation so business owners can focus purely on growth.',
+      'services.h': 'What I Build',
+      'services.sub': 'Tailored automations designed to solve real operational bottlenecks and save team hours.',
+      's1.t': 'n8n Workflow Engineering', 's1.d': 'Designing self-healing automations that unify CRMs, communication channels, and spreadsheets with custom logic and zero downtime.',
+      's2.t': 'Conversational AI & Bots', 's2.d': 'Smart Telegram and WhatsApp agents that qualify leads, extract structured requirements, and auto-book appointments in seconds.',
+      's3.t': 'Bilingual Web Solutions', 's3.d': 'Modern, high-converting Arabic/English websites and client portals equipped with automated backend spreadsheets and CMS sync.',
+      'projects.h': 'Featured Projects & Case Studies',
+      'projects.sub': 'Real solutions built for client operations, productivity, and document retrieval.',
+      'p.problem': 'The Problem:', 'p.solution': 'The Solution:', 'p.impact': 'Impact:',
+      'p3.t': 'Real Estate Lead Qualification Bot',
+      'p3.prob': 'Slow manual replies caused real estate inquiries to go cold before agents could gather budget and location requirements.',
+      'p3.sol': 'Autonomous bot that holds conversational qualification, extracts 9 data attributes with AI, logs to Sheets, and books follow-ups automatically.',
+      'p3.imp': 'Sub-minute response rate 24/7 with zero human intervention required.',
+      'p2.t': 'RAG Document Vector Pipeline',
+      'p2.prob': 'Teams waste hours searching across extensive business PDF catalogs and technical reports for specific answers.',
+      'p2.sol': 'Vector search pipeline extracting text from Drive PDFs, generating embeddings via Gemini, and querying Supabase Vector Store with dimension alignment.',
+      'p2.imp': 'Instant semantic retrieval across hundreds of documentation pages.',
+      'p1.t': 'Natural Language Telegram Task Manager',
+      'p1.prob': 'Traditional task manager apps have high friction, resulting in forgotten to-dos and neglected trackers.',
+      'p1.sol': 'Telegram bot allowing voice/text natural input that parses intent via LLM and updates structured Google Sheet task matrices directly.',
+      'p1.imp': 'Frictionless task capture in under 3 seconds per entry.',
+      'p4.t': 'BP Blueprinter Studio Website',
+      'p4.prob': 'Studio needed a bilingual portfolio without an overcomplicated CMS requiring maintenance.',
+      'p4.sol': 'Engineered a bilingual Arabic/English responsive web application where project data and galleries sync dynamically from Google Sheets.',
+      'p4.imp': 'Fast loading speed with instant content updates via spreadsheets.',
+      'p4.link': 'View Live Website',
+      'calc.h': 'Time Recovery Estimator',
+      'calc.sub': 'Estimate how many hours custom n8n workflows and AI systems can give back to your team each month.',
+      'calc.hrs_label': 'Hours spent on repetitive manual tasks:',
+      'calc.est_save': 'Estimated Time Reclaimed',
+      'calc.note': 'Reinvest this time into high-leverage client growth and strategy.',
+      'calc.btn': 'Reclaim Your Time',
+      'exp.h': 'Experience & Track Record',
+      'exp.sub': 'Hands-on technical implementation across marketing and engineering environments.',
+      'e1.role': 'Digital Marketing & Automation Trainee', 'e1.d': 'Streamlined review pipelines, assisted clinic automation setups, and deployed AI content workflows.',
+      'e2.role': 'Engineering Assistant', 'e2.d': 'Developed studio web systems, digital assets, and integrated cloud content synchronization.',
+      'e3.role': 'Engineering Assistant', 'e3.d': 'Contributed to technical web layout presentations and operational support documentation.',
+      'contact.h': "Let's Automate Your Business",
+      'contact.p': 'Tell me where your team spends too much manual time, and I will show you how to turn it into an automated, scalable pipeline.',
+      'contact.email_title': 'Direct Email',
+      'contact.box_title': 'Direct Inquiry',
+      'contact.box_sub': 'Ready to discuss a project or custom workflow? Send a message directly.',
+      'contact.btn_mail': 'Email Me Directly',
+      'footer.rights': '© {y} Eyad Neanaa. All rights reserved.',
+      'meta.title': 'Eyad Neanaa | Marketing Automation & n8n Specialist',
+      'meta.desc': 'Eliminate repetitive operations with tailored n8n workflows, AI bots, and custom web systems.'
+    },
+    ar: {
+      'skip': 'تخطَّ إلى المحتوى',
+      'nav.about': 'نبذة', 'nav.services': 'الخدمات', 'nav.projects': 'المشاريع', 'nav.calculator': 'حاسبة توفير الوقت', 'nav.experience': 'الخبرات', 'nav.contact': 'تواصل', 'nav.book': 'ابدأ الآن',
+      'hero.tag': 'متاح لمشاريع الأتمتة والعمل الحر',
+      'hero.title': 'مختص أتمتة التسويق وأنظمة n8n',
+      'hero.tagline': 'أبني مسارات عمل آلية عبر n8n وبوتات ذكاء اصطناعي ومواقع ثنائية اللغة لإنهاء المهام اليدوية المتكررة وتسريع نمو الأعمال.',
+      'hero.cta1': 'استكشف المشاريع', 'hero.cta2': 'احسب الساعات الموفرة',
+      'metric.workflows': 'مسار عمل مؤتمت', 'metric.response': 'زمن الرد على العملاء', 'metric.bilingual': 'أنظمة ثنائية اللغة',
+      'about.h': 'نبذة عني',
+      'about.p': 'مهندس أتمتة متخصص في بناء مسارات العمل المعتمدة على الذكاء الاصطناعي وربط قواعد البيانات وتطوير تطبيقات الويب. أحول الإجراءات اليدوية المعقدة إلى تدفقات آلية مستقلة تمنح أصحاب الأعمال تركيزاً كاملاً على النمو.',
+      'services.h': 'ما أقوم ببنائه',
+      'services.sub': 'حلول أتمتة مخصصة لحل الاختناقات التشغيلية وتوفير ساعات العمل.',
+      's1.t': 'هندسة مسارات عمل n8n', 's1.d': 'تصميم مسارات عمل ذاتية الاستشفاء تربط أنظمة إدارة العملاء وقنوات التواصل وجداول البيانات دون توقف.',
+      's2.t': 'بوتات الذكاء الاصطناعي التفاعلية', 's2.d': 'بوتات ذكية عبر Telegram وWhatsApp تؤهل العملاء وتستخرج متطلباتهم وتجدول المواعيد آلياً في ثوانٍ.',
+      's3.t': 'حلول ويب ثنائية اللغة', 's3.d': 'مواقع وتطبيقات إلكترونية سريعة باللغتين العربية والإنجليزية مزودة بتحديث تلقائي للمحتوى عبر جداول البيانات.',
+      'projects.h': 'المشاريع ودراسات الحالة',
+      'projects.sub': 'حلول حقيقية تم بناؤها للعمليات التشغيلية والإنتاجية واسترجاع البيانات.',
+      'p.problem': 'المشكلة:', 'p.solution': 'الحل:', 'p.impact': 'الأثر:',
+      'p3.t': 'بوت تأهيل عملاء العقارات',
+      'p3.prob': 'التأخر في الرد اليدوي يفقد الشركات اهتمام العملاء قبل جمع بيانات الميزانية والموقع.',
+      'p3.sol': 'بوت محادثة يؤهل العملاء تلقائياً، ويستخرج 9 حقول بيانات عبر الذكاء الاصطناعي، ويسجلها في Google Sheets ويجدول المقابلات.',
+      'p3.imp': 'رد فوري على مدار الساعة دون أي تدخل بشري.',
+      'p2.t': 'مسار معالجة المستندات بتقنية RAG',
+      'p2.prob': 'إهدار ساعات طويلة في البحث اليدوي داخل ملفات PDF والكتالوجات التقنية الضخمة.',
+      'p2.sol': 'مسار بحث متجهات يستخرج النصوص من Drive ويولد تضمينات عبر Gemini ويخزنها في Supabase Vector Store.',
+      'p2.imp': 'استرجاع فوري ودقيق للمعلومات عبر مئات الصفحات.',
+      'p1.t': 'بوت إدارة المهام باللغة الطبيعية',
+      'p1.prob': 'تطبيقات إدارة المهام التقليدية بطيئة وتؤدي لنسيان المهام وعدم تدوينها.',
+      'p1.sol': 'بوت Telegram يقبل الأوامر الصوتية والنصية العادية ويحللها عبر نموذج ذكاء اصطناعي ويسجلها مباشرة في جداول Google Sheets.',
+      'p1.imp': 'تسجيل فوري للمهام في أقل من 3 ثوانٍ.',
+      'p4.t': 'موقع استوديو BP Blueprinter',
+      'p4.prob': 'حاجة الاستوديو لموقع ثنائي اللغة خفيف وبدون نظام إدارة محتوى معقد.',
+      'p4.sol': 'بناء موقع متجاوب بالكامل باللغتين العربية والإنجليزية تتحدث بياناته ومعارضه تلقائياً من جداول Google Sheets.',
+      'p4.imp': 'سرعة تحميل فائقة وسهولة تامة في تحديث المحتوى.',
+      'p4.link': 'معاينة الموقع مباشرة',
+      'calc.h': 'حاسبة استعادة الوقت',
+      'calc.sub': 'احسب كمية الساعات التي يمكن لمسارات عمل n8n وأنظمة الذكاء الاصطناعي إعادتها لفريقك شهرياً وسنوياً.',
+      'calc.hrs_label': 'الساعات المهدرة أسبوعياً في المهام اليدوية:',
+      'calc.est_save': 'الوقت المسترد المتوقع',
+      'calc.note': 'استثمر هذا الوقت في خدمة العملاء والتوسع الاستراتيجي للأعمال.',
+      'calc.btn': 'استعد وقت فريقك الآن',
+      'exp.h': 'الخبرات وسجل العمل',
+      'exp.sub': 'خبرة تطبيقية في أتمتة التسويق والحلول التقنية والأنظمة.',
+      'e1.role': 'متدرب تسويق رقمي وأتمتة', 'e1.d': 'تطوير مسارات المراجعات الرقمية وبناء حلول أتمتة للعيادات ومسارات محتوى بالذكاء الاصطناعي.',
+      'e2.role': 'مساعد مهندس', 'e2.d': 'تطوير أنظمة الويب للاستوديو ومزامنة المحتوى السحابي للمشاريع.',
+      'e3.role': 'مساعد مهندس', 'e3.d': 'المشاركة في إعداد عروض وتخطيطات المواقع التقنية.',
+      'contact.h': 'دعنا نؤتمت أعمالك اليوم',
+      'contact.p': 'أخبرني بالمهام اليدوية التي تستهلك وقت فريقك، وسأوضح لك كيف يمكن تحويلها إلى مسار عمل آلي بالكامل.',
+      'contact.email_title': 'البريد الإلكتروني المباشر',
+      'contact.box_title': 'طلب استشارة مباشر',
+      'contact.box_sub': 'جاهز لمناقشة مشروعك أو مسار عمل مخصص؟ أرسل تفاصيل مشروعك مباشرة.',
+      'contact.btn_mail': 'مراسلة عبر البريد الإلكتروني',
+      'footer.rights': 'جميع الحقوق محفوظة © {y} إياد نعينع',
+      'meta.title': 'إياد نعينع | مختص أتمتة التسويق وأنظمة n8n',
+      'meta.desc': 'تخلص من العمليات اليدوية المتكررة عبر مسارات عمل n8n وبوتات الذكاء الاصطناعي والحلول البرمجية.'
+    }
+  };
+
+  var root = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var year = new Date().getFullYear();
+  var typed = document.getElementById('typed');
+  var timers = [];
+
+  function tr(lang, key) { return (T[lang][key] || '').replace('{y}', year); }
+  function meta(sel, val) { var el = document.querySelector(sel); if (el) el.setAttribute('content', val); }
+  function clearTimers() { timers.forEach(clearTimeout); timers = []; }
+
+  function showTitleInstantly(lang) {
+    clearTimers();
+    typed.textContent = tr(lang, 'hero.title');
+    typed.classList.add('done');
+  }
+
+  function typeTitle(lang) {
+    var chars = Array.from(tr(lang, 'hero.title')), i = 0;
+    typed.classList.remove('done');
+    typed.textContent = '';
+    function step() {
+      i++;
+      typed.textContent = chars.slice(0, i).join('');
+      if (i < chars.length) {
+        timers.push(setTimeout(step, 35 + Math.random() * 25));
+      } else {
+        timers.push(setTimeout(function () { typed.classList.add('done'); }, 1400));
+      }
+    }
+    timers.push(setTimeout(step, 400));
+  }
+
+  function apply(lang) {
+    root.lang = lang;
+    root.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      el.textContent = tr(lang, el.getAttribute('data-i18n'));
+    });
+
+    document.title = tr(lang, 'meta.title');
+    meta('meta[name="description"]', tr(lang, 'meta.desc'));
+    meta('meta[property="og:title"]', tr(lang, 'meta.title'));
+    meta('meta[property="og:description"]', tr(lang, 'meta.desc'));
+
+    var other = lang === 'ar' ? 'en' : 'ar';
+    document.querySelectorAll('[data-lang-toggle]').forEach(function (btn) {
+      btn.textContent = other === 'ar' ? 'العربية' : 'English';
+      btn.setAttribute('lang', other);
+    });
+
+    updateCalc();
+  }
+
+  function setLang(lang) {
+    apply(lang);
+    showTitleInstantly(lang);
+    try { localStorage.getItem('lang'); localStorage.setItem('lang', lang); } catch (e) {}
+    try {
+      var u = new URL(location.href);
+      u.searchParams.set('lang', lang);
+      history.replaceState(null, '', u);
+    } catch (e) {}
+  }
+
+  document.querySelectorAll('[data-lang-toggle]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      setLang(root.lang === 'ar' ? 'en' : 'ar');
+    });
+  });
+
+  // Time Recovery Calculator Logic
+  var hrsInput = document.getElementById('hrs-input');
+  var hrsVal = document.getElementById('hrs-val');
+  var calcSavings = document.getElementById('calc-savings');
+  var calcHours = document.getElementById('calc-hours');
+
+  function updateCalc() {
+    if (!hrsInput) return;
+    var hrs = parseInt(hrsInput.value, 10);
+    var isAr = root.lang === 'ar';
+
+    hrsVal.textContent = hrs + (isAr ? ' ساعة/أسبوع' : ' hrs/week');
+
+    // Assume 80% of repetitive operational tasks can be completely automated
+    var monthlyHours = Math.round(hrs * 4.33 * 0.8);
+    var annualHours = Math.round(hrs * 52 * 0.8);
+
+    calcSavings.textContent = isAr ? ('~' + monthlyHours + ' ساعة / شهر') : ('~' + monthlyHours + ' hrs / mo');
+    calcHours.textContent = isAr ? ('~' + annualHours.toLocaleString() + ' ساعة مستردة سنوياً') : ('~' + annualHours.toLocaleString() + ' hours freed per year');
+  }
+
+  if (hrsInput) {
+    hrsInput.addEventListener('input', updateCalc);
+  }
+
+  var initial = root.lang === 'ar' ? 'ar' : 'en';
+  apply(initial);
+  if (reduce) { showTitleInstantly(initial); } else { typeTitle(initial); }
+
+  var reveals = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -4% 0px' });
+    reveals.forEach(function (el) { io.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
